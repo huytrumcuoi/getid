@@ -1,0 +1,40 @@
+import requests
+
+cookies = {
+    '_ga': 'GA1.1.503892436.1631881184',
+    '_hjid': '89eba77f-7d67-4b68-93f5-d25dd7effdd5',
+    'intercom-id-ruz1xgns': '11aaee35-bf61-4da4-8837-db56a5856c9d',
+    '_gcl_au': '1.1.944000874.1641307949',
+    '_rdt_uuid': '1641307949784.b4f05d08-5161-4d3f-a403-373a5706fe84',
+    '_ga_ZDN3X5YQDJ': 'GS1.1.1641307949.3.0.1641307949.60',
+    '_uetsid': 'f0b72a406d6d11ec8cc6852aa481fafe',
+    '_uetvid': '8a9e7e3017b111ecb73eb592ebf6eb15',
+    '_fbp': 'fb.1.1641307951001.1173501527',
+    'prism_611232746': '75addb3a-72d3-48b4-af23-0191c43230d7',
+    'messagesUtk': 'e70b24792d5b4fc39b7ca054401948ce',
+    'hs-messages-hide-welcome-message': 'true',
+    '__hstc': '139242348.95549189cbc587450db49dee66b934e5.1641307979571.1641307979571.1641307979571.1',
+    'hubspotutk': '95549189cbc587450db49dee66b934e5',
+    '__hssrc': '1',
+    '__hssc': '139242348.1.1641307979573',
+}
+
+headers = {
+    'authority': 'proxylist.geonode.com',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'none',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'if-none-match': 'W/"95c9-aBqsnU3ItckOv3QYZN7kiXIETD4"',
+}
+
+response = requests.get('https://proxylist.geonode.com/api/proxy-list?limit=100&page=1&sort_by=lastChecked&sort_type=desc', headers=headers, cookies=cookies)
+print(response.content)
