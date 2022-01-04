@@ -1,22 +1,29 @@
 import requests
 
+cookies = {
+    'PHPSESSID': 'q3tssddlfkeei0ep66asb768n0',
+}
+
 headers = {
-    'authority': 'api.findids.net',
+    'authority': 'id.atpsoftware.vn',
+    'cache-control': 'max-age=0',
     'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
-    'accept': 'application/json, text/plain, */*',
-    'content-type': 'application/json;charset=UTF-8',
     'sec-ch-ua-mobile': '?0',
-    'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
     'sec-ch-ua-platform': '"Windows"',
-    'origin': 'https://findids.net',
-    'sec-fetch-site': 'same-site',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-dest': 'empty',
-    'referer': 'https://findids.net/',
+    'upgrade-insecure-requests': '1',
+    'origin': 'https://id.atpsoftware.vn',
+    'content-type': 'application/x-www-form-urlencoded',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    'referer': 'https://id.atpsoftware.vn/',
     'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
 }
 
-data = '{"username":"hellohuyday"}'
+data = 'linkCheckUid=https%3A%2F%2Fwww.facebook.com%2Fhellohuyday'
 
-response = requests.post('https://api.findids.net/api/get-uid-from-username', headers=headers, data=data)
+response = requests.post('https://id.atpsoftware.vn/', headers=headers, cookies=cookies, data=data)
 print(response.content)
