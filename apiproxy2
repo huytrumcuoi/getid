@@ -1,0 +1,28 @@
+import requests
+
+cookies = {
+    '_ga': 'GA1.2.1074677237.1631880994',
+    '_gid': 'GA1.2.328375365.1641379619',
+    '_gat': '1',
+}
+
+headers = {
+    'authority': 'free-proxy-list.net',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="96", "Google Chrome";v="96"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    'referer': 'https://www.google.com/',
+    'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'if-modified-since': 'Wed, 05 Jan 2022 10:42:05 GMT',
+}
+
+response = requests.get('https://free-proxy-list.net/', headers=headers, cookies=cookies)
+print(response.content)
