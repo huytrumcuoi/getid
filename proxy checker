@@ -1,0 +1,27 @@
+import requests
+
+cookies = {
+    '_ga': 'GA1.2.1345076340.1632017085',
+    '__atssc': 'google%3B3',
+    '_gid': 'GA1.2.1913836593.1641737377',
+    '_gat': '1',
+    '__atuvc': '3%7C2',
+    '__atuvs': '61daeca0b1fc768f002',
+}
+
+headers = {
+    'Connection': 'keep-alive',
+    'Cache-Control': 'max-age=0',
+    'Upgrade-Insecure-Requests': '1',
+    'Origin': 'http://www.proxy-checker.org',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'Referer': 'http://www.proxy-checker.org/',
+    'Accept-Language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+}
+
+data = 'list=203.28.9.25:80'
+
+response = requests.post('http://www.proxy-checker.org/result.php', headers=headers, cookies=cookies, data=data, verify=False)
+print(response.content)
