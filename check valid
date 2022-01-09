@@ -25,6 +25,15 @@ headers = {
     'referer': 'https://m.facebook.com/login/identify/?ctx=recover&c&multiple_results=0&from_login_screen=0&_rdr',
     'accept-language': 'vi-VN,vi;q=0.9',
 }
+data = {
+ldata: AWdgf8tzP8tcJg8tXwt4uQvnfhr3FcJ3rsAt_ZMAC9ZEEHSYmaLG9rkOayHUCst7Ku5RHUR0X8k7Spr8vcgC_HRAV2b5sZQua8ZI3ckTgi_StsvQlKkE_nwFlZHAqftlOuTZFa9mlrAC3kuvaFHfDRcZ57YVWgNFUQLaZ3XTZle_NyCxHhDZksdPR2-O5BnCc9Re0vIgeps85le4bcQiH2Ip38ErouoizljrmupmFCwIi3WrX-ZPi1jMdOKaaAi_fIIr869ORpy4MQ5XR_Ge3K1I
+multiple_results: 0
+scp: 1
+pls: geneva.rosario@yahoo.com
+c: /login/?next=https%3A%2F%2Fm.facebook.com%2Fhome.php&refsrc=deprecated
+refsrc: deprecated
+_rdr:
+}
 
 response = requests.get('https://m.facebook.com/login/identify/?ctx=recover&c&multiple_results=0&from_login_screen=0&_rdr', headers=headers, cookies=cookies)
 print(response.content)
