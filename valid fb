@@ -2,31 +2,30 @@ import requests
 
 cookies = {
     'datr': '4aHeYT58ZVEoNZo1XN8fTuRT',
-    'fr': '0A2YRovgxT2JpJWTC..Bh3qHh.j8.AAA.0.0.Bh3qIQ.AWXRWqcytoc',
+    'fr': '0A2YRovgxT2JpJWTC..Bh3qHh.j8.AAA.0.0.Bh3qZK.AWVrHzasNcY',
     'sb': '4aHeYVchlxPPObhSTXorTScA',
     'm_pixel_ratio': '1',
-    'wd': '1360x615',
+    'wd': '1360x269',
 }
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:96.0) Gecko/20100101 Firefox/96.0',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept': '*/*',
     'Accept-Language': 'vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3',
     'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://m.facebook.com/login/identify/',
+    'Referer': 'https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0',
     'Content-Type': 'application/x-www-form-urlencoded',
-    'Origin': 'https://m.facebook.com',
+    'X-FB-LSD': 'AVq-5z3PBTw',
+    'Origin': 'https://www.facebook.com',
     'DNT': '1',
     'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-User': '?1',
     'TE': 'trailers',
 }
 
-data = 'lsd=AVq-5z3P8iU&jazoest=2861&email=aaasdsfdjkk%40gmail.com&did_submit=T%C3%ACm+ki%E1%BA%BFm'
+data = 'jazoest=2884&lsd=AVq-5z3PBTw&email=anhdndjssd%40gmail.com&did_submit=1&__user=0&__a=1&__dyn=7xeUmBwjbg7ebwKBWo5O12wAxu13wqovzEdEc8uxa0z8S2S4o1j8hwem0nCq1ewcG0KEswaq0yE7i0n2US1vw9W1PwBgao884y0Mo5W3S1lwlEbE28xe3C0D85a2W2K0zE5W0HUvw4JwJwSyES0gq&__csr=&__req=5&__hs=19004.BP%3ADEFAULT.2.0.0.0.&dpr=1&__ccg=EXCELLENT&__rev=1004933075&__s=mdjgja%3Atmx3lk%3Ahmlhj8&__hsi=7052256956639929445-0&__comet_req=0&__spin_r=1004933075&__spin_b=trunk&__spin_t=1641981526'
 
-response = requests.post('https://m.facebook.com/login/identify/?ctx=recover&c=%2Flogin%2F&search_attempts=1&alternate_search=0&show_friend_search_filtered_list=0&birth_month_search=0&city_search=0', headers=headers, cookies=cookies, data=data)
+response = requests.post('https://www.facebook.com/ajax/login/help/identify.php?ctx=recover', headers=headers, cookies=cookies, data=data)
 print(response.content)
