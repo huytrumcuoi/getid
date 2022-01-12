@@ -1,0 +1,32 @@
+import requests
+
+cookies = {
+    'datr': '4aHeYT58ZVEoNZo1XN8fTuRT',
+    'fr': '0A2YRovgxT2JpJWTC..Bh3qHh.j8.AAA.0.0.Bh3qIQ.AWXRWqcytoc',
+    'sb': '4aHeYVchlxPPObhSTXorTScA',
+    'm_pixel_ratio': '1',
+    'wd': '1360x615',
+}
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:96.0) Gecko/20100101 Firefox/96.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Referer': 'https://m.facebook.com/login/identify/',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Origin': 'https://m.facebook.com',
+    'DNT': '1',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'TE': 'trailers',
+}
+
+data = 'lsd=AVq-5z3P8iU&jazoest=2861&email=aaasdsfdjkk%40gmail.com&did_submit=T%C3%ACm+ki%E1%BA%BFm'
+
+response = requests.post('https://m.facebook.com/login/identify/?ctx=recover&c=%2Flogin%2F&search_attempts=1&alternate_search=0&show_friend_search_filtered_list=0&birth_month_search=0&city_search=0', headers=headers, cookies=cookies, data=data)
+print(response.content)
