@@ -3,13 +3,12 @@ import json
 
 cookies = {
     'sb': 'hDLgYbua0JObUL2-Ktte4qh9',
+    'wd': '1360x657',
     'datr': 'hDLgYcq9tmILYQ0q00aINEEU',
     'c_user': '100076758415970',
-    '_fbp': 'fb.1.1641390145542.120452399',
-    'presence': 'C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1642077010667%2C%22v%22%3A1%7D',
     'spin': 'r.1004936581_b.trunk_t.1642082980_s.1_v.2_',
-    'xs': '47%3Altl4WgxZgk3P1Q%3A2%3A1642082972%3A-1%3A-1',
-    'fr': '031rFxYF2QtI9eyUQ.AWXZ_KrPcGSap-C8-YvTQZuipBo.Bh4DKE.jQ.AAA.0.0.Bh4DKc.AWXxVZtXl14',
+    'xs': '47%3Altl4WgxZgk3P1Q%3A2%3A1642082972%3A-1%3A-1%3A%3AAcWyEFFj38Y3LU2-6PzfFLhgjYBmem67Ey6LHpG_lA',
+    'fr': '0KVW90K7F8nVTVjaT.AWUO4-VO1-n_14mg0IGcFlQcjxE.Bh4EV9.jQ.AAA.0.0.Bh4EV9.AWXgnnXufPg',
 }
 
 headers = {
@@ -17,9 +16,9 @@ headers = {
     'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
     'sec-ch-ua-mobile': '?0',
     'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36',
-    'viewport-width': '507',
+    'viewport-width': '733',
     'x-fb-friendly-name': 'CometPageCreateMutation',
-    'x-fb-lsd': '6gn8lS_o82VYOpyN_6wJsY',
+    'x-fb-lsd': 'vjLMmBszkbGXMElzNc5N2H',
     'content-type': 'application/x-www-form-urlencoded',
     'sec-ch-ua-platform': '"Windows"',
     'accept': '*/*',
@@ -28,36 +27,35 @@ headers = {
     'sec-fetch-mode': 'cors',
     'sec-fetch-dest': 'empty',
     'referer': 'https://www.facebook.com/pages/creation/?ref_type=launch_point',
-    'accept-language': 'vi-VN,vi;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5',
+    'accept-language': 'vi-VN,vi;q=0.9',
 }
 
 data = {
   'av':'100076758415970',
   '__user':'100076758415970',
   '__a':'1',
-  '__dyn':'7AzHxqU5a5Q1ryaxG4VuC0BVU98nwgU76byQdwSwAyU8EW0CEboG4E762S1DwUx60gu0luq7oc82-wcq78-221Rwwwg8a8465o-cwfG12wOKdwGwQw9m8wsU9kbxS2218wc61axe3S68f85qfK6E7e58jwGzEaE5e7oqBwJK5Umxm5oe8464-5pUfE98jws9ovUy2a1ywsU8FobodEGdwb6223908O',
-  '__csr':'gP0GPi8ls9n8BPtTnnaxZFnP48yJn4lq9uH8Bvmjh2sz8Wa8mGSD_uTiHjLAAprmK8mALRHGpGLLijuABiiJ8xiBiGPFkJpG_iWaiyeGVKVXFyqyp8HSDx7LV8_AAryF8K8GbAp8zmazLAi-ueBmAi8BpkUWGgyEjKAaCGnx7F5Ux2Fp8OK4Wy6ENbwyxi2WbyVQmEiLz8SfDxu9AzEhxlCyEy48txfK4UK9K4A9wByVFe8x67rUy4FQlyGBxu3e3u7Q9xCexeQcCmcypUrG2uUjwj44J1CbwywpU8EG4EK5A2a2l0gk2_zbxW2Cm36VXK6VUgxK2Odx6cz8cUSi6E98rw8m4oig4G48dA5US3e0S85O4o0Sa0j6exa1fzE4e0erxe4WwpU19K5o7S1qwQwa63y08gwLxB0umm2XU13o0Fa2q14wgo7afxGrw76w2DUhw2PU0Nu5E0pTwww4kw1dG5U2LwRK0ju9Ueo3dxa9g7S0TEcKu48423WdxmfwOxmEmw7ah498m95hE5W0QUpxG18zk0Io18eu8kAw0pwyp85G69U4Ki0FU84iWBwa67E0UydwhUgCwg84C3qi4Q1fyUqwsEdoG2C1Lgbo0xww2_w308B0Awciqi0TV84O8wLwcG08oe0k64EarJ0',
-  '__req':'3p',
+  '__dyn':'7AzHxqU5a5Q1ryaxG4VuC0BVU98nwgU765QdwSwAyUco2qwJyEiwsobo6u3y4o0B-q7oc81xoswMwto88422y11xmfz81sbzoaEd82ly87e2l2Utwwwi831wiEjwZxy3O1mzXxG1Pxi4UaEW2G1jxS6Fobrxu5Elxm3y11xfxmu3W3y1MBx_y88E6a1PwyBwJwSyES0Io88cA0z8',
+  '__csr':'gP2dv9FIAQkD26yFIgDq6SXnaJdlH-gsCA_F6q8nZObn9uHQGuKuhrhQpUx2mC-AlByoggHAyaF2pAUCFWzFAWKSroCqFlhuqiVqoFdairyVQ9GeyHAxK2miaxObxjgOezfDxhrAxp1aHx-79UjKeUKazUlG8Az4E984-by9qxa-1axS2tCyEy12Ucoig4afwLBy8izKaxCdwMwywQAwwxSUG2u4E7y4o4O9G210PwwyUiwnrCG1QK8xa4o9oO3e0Fe58W3iaxa5UK2y0Lo-Fo6Sdy43iq6o0jaUkwjU1N811852az82xw58xe4WwpU19K5o7S1qwQwa63y08gwLxB0umm0fWwh82QzUqCU0hCx60bfw35Umw1Du220hi04SEnwa-3mU1vo3dxa9g7S0TEcKu48423WdxmfwOxmEmw7ah498m95hE1j8qwi8R0b60i3Dy59806o8Ci1qxyu1bAwcx4KFo2xxW0e8zo4u49E4219wSAxd0jUK6E7a3mawFw9W08o80LU0M29g9834CAwd-i1cy8bU0KcU',
+  '__req':'x',
   '__hs':'19005.HYP:comet_pkg.2.1.0.2.',
   'dpr':'1',
   '__ccg':'MODERATE',
-  '__rev':'1004936501',
-  '__s':'89cufo:6xmcgl:tw6xp1',
-  '__hsi':'7052684657581087224-0',
+  '__rev':'1004936581',
+  '__s':'gtzg3y:max2vt:4kayht',
+  '__hsi':'7052713402492857427-0',
   '__comet_req':'1',
-  'fb_dtsg':'AQHZ2TSyziYUQMM:19:1639931316',
-  'jazoest':'22026',
-  'lsd':'6gn8lS_o82VYOpyN_6wJsY',
-  '__spin_r':'1004936501',
+  'fb_dtsg':'AQF-SjnU1xxARi4:47:1642082972',
+  'jazoest':'21982',
+  'lsd':'vjLMmBszkbGXMElzNc5N2H',
+  '__spin_r':'1004936581',
   '__spin_b':'trunk',
-  '__spin_t':'1642081108',
+  '__spin_t':'1642087801',
   'fb_api_caller_class':'RelayModern',
   'fb_api_req_friendly_name':'CometPageCreateMutation',
-  'variables':'{"input":{"categories":["192021210817573"],"description":"","name":"Testtthihi","publish":true,"ref":"launch_point","actor_id":"100076758415970","client_mutation_id":"2"}}',
+  'variables':'{"input":{"categories":["147714868971098"],"description":"","name":"Addmams","publish":true,"ref":"launch_point","actor_id":"100076758415970","client_mutation_id":"2"}}',
   'server_timestamps':'true',
   'doc_id':'6015849741773814',
-  'fb_api_analytics_tags':'["qpl_active_flow_ids=30605361"]',
 }
 
-response = requests.post('https://www.facebook.com/api/graphql/', headers=headers, cookies=cookies, data=data)
+response = requests.post('https://www.facebook.com/pages/creation/?ref_type=launch_point', headers=headers, cookies=cookies, data=data)
 print(response.json())
