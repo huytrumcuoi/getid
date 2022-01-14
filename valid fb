@@ -1,31 +1,39 @@
 import requests
 
 cookies = {
-    'datr': '4aHeYT58ZVEoNZo1XN8fTuRT',
-    'fr': '0A2YRovgxT2JpJWTC..Bh3qHh.j8.AAA.0.0.Bh3qZK.AWVrHzasNcY',
-    'sb': '4aHeYVchlxPPObhSTXorTScA',
-    'm_pixel_ratio': '1',
-    'wd': '1360x269',
+    'fr': '0SQL6kAiefPydHSum..Bh4V6t.hg.AAA.0.0.Bh4V6t.AWU2ZQeh134',
+    'sb': 'rV7hYWULkAGEJ-G43KU1J-KJ',
+    'datr': 'rV7hYVAeY5b79T5SrmEVHtKv',
+    'wd': '507x625',
 }
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; rv:96.0) Gecko/20100101 Firefox/96.0',
-    'Accept': '*/*',
-    'Accept-Language': 'vi-VN,vi;q=0.8,en-US;q=0.5,en;q=0.3',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Referer': 'https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0',
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'X-FB-LSD': 'AVq-5z3PBTw',
-    'Origin': 'https://www.facebook.com',
-    'DNT': '1',
-    'Connection': 'keep-alive',
-    'Sec-Fetch-Dest': 'empty',
-    'Sec-Fetch-Mode': 'cors',
-    'Sec-Fetch-Site': 'same-origin',
-    'TE': 'trailers',
+    'authority': 'www.facebook.com',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+    'upgrade-insecure-requests': '1',
+    'origin': 'https://www.facebook.com',
+    'content-type': 'application/x-www-form-urlencoded',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-user': '?1',
+    'sec-fetch-dest': 'document',
+    'referer': 'https://www.facebook.com/',
+    'accept-language': 'vi-VN,vi;q=0.9',
 }
 
-data = 'jazoest=2884&lsd=AVq-5z3PBTw&email=anhdndjssd%40gmail.com&did_submit=1&__user=0&__a=1&__dyn=7xeUmBwjbg7ebwKBWo5O12wAxu13wqovzEdEc8uxa0z8S2S4o1j8hwem0nCq1ewcG0KEswaq0yE7i0n2US1vw9W1PwBgao884y0Mo5W3S1lwlEbE28xe3C0D85a2W2K0zE5W0HUvw4JwJwSyES0gq&__csr=&__req=5&__hs=19004.BP%3ADEFAULT.2.0.0.0.&dpr=1&__ccg=EXCELLENT&__rev=1004933075&__s=mdjgja%3Atmx3lk%3Ahmlhj8&__hsi=7052256956639929445-0&__comet_req=0&__spin_r=1004933075&__spin_b=trunk&__spin_t=1641981526'
+data = {
+    'jazoest':'2814',
+    'lsd':'AVp1V2fm--A',
+    'email':'akkkdvdvnn@gmail.com',
+    'login_source':'comet_headerless_login',
+    'next':'',
+    'encpass':'#PWD_BROWSER:5:1642160075:AfRQAFmCYwSMb62hcAXRs+5bZmeUTZ52aP4s1GqhsvsZnIUgqOFBKn9vqsL3l3XG7m/2xiHYbNzDWzZMnM0KmXGJDz8AtuNm3ZUvUN9Kw4sfVKxb3RiNBttPI/8DMECRtl/zgA==',
+}
 
-response = requests.post('https://www.facebook.com/ajax/login/help/identify.php?ctx=recover', headers=headers, cookies=cookies, data=data)
+response = requests.post('https://www.facebook.com/login/', headers=headers, cookies=cookies, data=data)
 print(response.content)
