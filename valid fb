@@ -1,20 +1,23 @@
 import requests
 
 cookies = {
-    'fr': '0SQL6kAiefPydHSum..Bh4V6t.hg.AAA.0.0.Bh4V6t.AWU2ZQeh134',
-    'sb': 'rV7hYWULkAGEJ-G43KU1J-KJ',
-    'datr': 'rV7hYVAeY5b79T5SrmEVHtKv',
-    'wd': '507x625',
+    'sb': '0EXiYWVSpTP33NFuH0qgQRIS',
+    'datr': '0EXiYQAzNdFnypBka4WGZynO',
+    'm_pixel_ratio': '1',
+    'x-referer': 'eyJyIjoiL3JlZy8%2FY2lkPTEwMyZyZWZzcmM9ZGVwcmVjYXRlZCZzb2Z0PWhqayIsImgiOiIvcmVnLz9jaWQ9MTAzJnJlZnNyYz1kZXByZWNhdGVkJnNvZnQ9aGprIiwicyI6Im0ifQ%3D%3D',
+    'rs': '8%7C3%7C1999%7C2%7Cobitohuy476%40gmail.com%7CSdasd%7CDsd%7CSdasd+Dsd',
+    'wd': '630x625',
+    'fr': '0EqkQ2aE4l8xdfApL..Bh4kXQ.Ws.AAA.0.0.Bh4lBS.AWXaHbj7hVQ',
 }
 
 headers = {
-    'authority': 'www.facebook.com',
+    'authority': 'mbasic.facebook.com',
     'cache-control': 'max-age=0',
     'sec-ch-ua': '" Not;A Brand";v="99", "Google Chrome";v="97", "Chromium";v="97"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
     'upgrade-insecure-requests': '1',
-    'origin': 'https://www.facebook.com',
+    'origin': 'https://mbasic.facebook.com',
     'content-type': 'application/x-www-form-urlencoded',
     'user-agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -22,18 +25,16 @@ headers = {
     'sec-fetch-mode': 'navigate',
     'sec-fetch-user': '?1',
     'sec-fetch-dest': 'document',
-    'referer': 'https://www.facebook.com/',
+    'referer': 'https://mbasic.facebook.com/login/identify',
     'accept-language': 'vi-VN,vi;q=0.9',
 }
 
 data = {
-    'jazoest':'2814',
-    'lsd':'AVp1V2fm--A',
-    'email':'akkkdvdvnn@gmail.com',
-    'login_source':'comet_headerless_login',
-    'next':'',
-    'encpass':'#PWD_BROWSER:5:1642160075:AfRQAFmCYwSMb62hcAXRs+5bZmeUTZ52aP4s1GqhsvsZnIUgqOFBKn9vqsL3l3XG7m/2xiHYbNzDWzZMnM0KmXGJDz8AtuNm3ZUvUN9Kw4sfVKxb3RiNBttPI/8DMECRtl/zgA==',
+    'lsd':'AVq0dsK-haQ',
+    'jazoest':'2929',
+    'email':'kwedqowkcac@gmail.com',
+    'did_submit':'Tìm kiếm',
 }
 
-response = requests.post('https://www.facebook.com/login/', headers=headers, cookies=cookies, data=data)
+response = requests.post('https://mbasic.facebook.com/login/identify', headers=headers, cookies=cookies, data=data)
 print(response.content)
