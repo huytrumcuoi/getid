@@ -35,25 +35,25 @@ headers = {
 }
 
 data = {
-  'agreement':'{versionList: ["41", "40", "90", "49"], bundleId: 17}'
-  'bundleId':'17'
-  'versionList':'["41", "40", "90", "49"]'
-  '0':'"41"'
-  '1':'"40"'
-  '2':'"90"'
-  '3':'"49"'
-  'captcha':'"03AGdBq25vF_hm-kZKcBHM9f2H7AhSvbsB2KV4drulMQLWu-1cS3OZkLBN4rRZVYfI_I35X8JoJ1Io-NxYN_mKYqgi8duRYSrxvo37FhGslXIksD8dHpKL872A5C76x7MnyZ1z145BowXTxSP8KpSgcmP6hc_PoA7EN1oljhyXP3dww7yf7sdcmxmpCdGQiFgT_mJVfZz4YEcD9gRm_jpdTb5Dxu-7fUDbEv6hro88pnScihIWQPndu26vJefnWy74G_qjzNCbCXoYxQUPJvScv5bQmgARAbD8GQ5txFHkZNDjkq9TgR_uEzZmnBy1Uk8ZPT1xj1lkrD7NVyByD_0-8QExYIQAwScbkO4fZqdhtmSexcwfbs1kS6lUCwzSWL5vfIXt-RlyjFlSqtDAG7jAGM8PEzITfpws4k7BHBzveTDn0pYLu7nAIeWHL0CJnmG5Nm4if3tPPj0zNLw8IEEJ8shIXAD0UZPMUA"'
-  'user':'{name:"dsdsd", surname: "dsdtnf", birthDate: "1999-9-22", gender: "M", login: "josh",…}'
-  'agreementHazard':'1'
-  'birthDate':'"1999-9-22"'
-  'domain':'"interia.pl"'
-  'gender':'"M"'
-  'login':'"josh"'
-  'name':'"dsdsd"'
-  'password':'"Lamgiahuy@123"'
-  'rePassword':'"Lamgiahuy@123"'
-  'surname':'"dsdtnf"'
-  'type':'0'
+  'agreement':'{versionList: ["41", "40", "90", "49"], bundleId: 17}',
+  'bundleId':'17',
+  'versionList':'["41", "40", "90", "49"]',
+  '0':'"41"',
+  '1':'"40"',
+  '2':'"90"',
+  '3':'"49"',
+  'captcha':'"03AGdBq25vF_hm-kZKcBHM9f2H7AhSvbsB2KV4drulMQLWu-1cS3OZkLBN4rRZVYfI_I35X8JoJ1Io-NxYN_mKYqgi8duRYSrxvo37FhGslXIksD8dHpKL872A5C76x7MnyZ1z145BowXTxSP8KpSgcmP6hc_PoA7EN1oljhyXP3dww7yf7sdcmxmpCdGQiFgT_mJVfZz4YEcD9gRm_jpdTb5Dxu-7fUDbEv6hro88pnScihIWQPndu26vJefnWy74G_qjzNCbCXoYxQUPJvScv5bQmgARAbD8GQ5txFHkZNDjkq9TgR_uEzZmnBy1Uk8ZPT1xj1lkrD7NVyByD_0-8QExYIQAwScbkO4fZqdhtmSexcwfbs1kS6lUCwzSWL5vfIXt-RlyjFlSqtDAG7jAGM8PEzITfpws4k7BHBzveTDn0pYLu7nAIeWHL0CJnmG5Nm4if3tPPj0zNLw8IEEJ8shIXAD0UZPMUA"',
+  'user':'{name:"dsdsd", surname: "dsdtnf", birthDate: "1999-9-22", gender: "M", login: "josh",…}',
+  'agreementHazard':'1',
+  'birthDate':'"1999-9-22"',
+  'domain':'"interia.pl"',
+  'gender':'"M"',
+  'login':'"josh"',
+  'name':'"dsdsd"',
+  'password':'"Lamgiahuy@123"',
+  'rePassword':'"Lamgiahuy@123"',
+  'surname':'"dsdtnf"',
+  'type':'0',
 }
 
 response = requests.post('https://konto-pocztowe.interia.pl/account', headers=headers, cookies=cookies, data=data)
